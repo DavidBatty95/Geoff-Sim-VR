@@ -1,0 +1,55 @@
+{
+  "timestamp_utc": "2026-10-26T12:55:31.991841+00:00",
+  "renderer": "EGL/NVIDIA",
+  "physical_headset_tested": false,
+  "sessions": [
+    {
+      "source": "synthetic Vuer messages over TLS; no physical headset",
+      "input_mode": "controller",
+      "image_messages": 39,
+      "tracking_component_received": true,
+      "events_received": 150,
+      "left_displacement_m": 0.03423454614350305,
+      "right_displacement_m": 0.03423454614350205,
+      "disconnect_hold": true,
+      "sim_to_wall_ratio": 0.9920424403183024,
+      "display_mode": "immersive"
+    },
+    {
+      "source": "synthetic Vuer messages over TLS; no physical headset",
+      "input_mode": "controller",
+      "image_messages": 41,
+      "tracking_component_received": true,
+      "events_received": 150,
+      "left_displacement_m": 0.034266126990947526,
+      "right_displacement_m": 0.0362915141770406,
+      "disconnect_hold": true,
+      "sim_to_wall_ratio": 0.9947089947089945,
+      "display_mode": "ego"
+    },
+    {
+      "source": "synthetic Vuer messages over TLS; no physical headset",
+      "input_mode": "hand",
+      "image_messages": 41,
+      "tracking_component_received": true,
+      "events_received": 150,
+      "left_displacement_m": 0.03425380002747189,
+      "right_displacement_m": 0.03709682494662345,
+      "disconnect_hold": true,
+      "sim_to_wall_ratio": 0.9946808510638299,
+      "display_mode": "immersive"
+    },
+    {
+      "source": "synthetic Vuer messages over TLS; no physical headset",
+      "input_mode": "hand",
+      "image_messages": 42,
+      "tracking_component_received": true,
+      "events_received": 150,
+      "left_displacement_m": 0.03423005800376819,
+      "right_displacement_m": 0.041558737539544005,
+      "disconnect_hold": true,
+      "sim_to_wall_ratio": 0.9946808510638296,
+      "display_mode": "ego"
+    }
+  ]
+}

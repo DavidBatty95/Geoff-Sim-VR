@@ -1,0 +1,23 @@
+services:
+  vr:
+    image: dougie-vr:local
+    build: .
+    init: true
+    ports:
+      - "${VR_PORT:-8012}:8012"
+      - "${DASHBOARD_BIND:-127.0.0.1}:${DASHBOARD_PORT:-8080}:8080"
+    volumes:
+      - type: bind
+        source: ./certs
+        target: /certs
+        read_only: true
+        bind:
+          create_host_path: false
+    environment:
+      XR_TELEOP_CERT: /certs/cert.pem
+      XR_TELEOP_KEY: /certs/key.pem
+      INPUT_MODE: ${INPUT_MODE:-controller}
+      DISPLAY_MODE: ${DISPLAY_MODE:-immersive}
+      DISPLAY_FPS: ${DISPLAY_FPS:-15}
+    shm_size: 256mb
+    stop_grace_period: 10s

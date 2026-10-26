@@ -1,0 +1,6 @@
+services:
+  vr:
+    gpus: all
+    environment:
+      MUJOCO_GL: egl
+      NVIDIA_DRIVER_CAPABILITIES: graphics,utility,compute

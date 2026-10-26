@@ -1,0 +1,25 @@
+name: Container verification
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  physics-and-xr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build self-contained image
+        run: ./dougie-vr build
+      - name: Test real physics and tracking handlers
+        run: ./dougie-vr test
+      - name: Render synthetic replay
+        run: ./dougie-vr demo
+      - name: Create disposable local certificate
+        run: ./dougie-vr certs 127.0.0.1
+      - name: Verify live hand/controller and display profiles
+        run: python3 scripts/verify_sessions.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: simulation-evidence
+          path: results/

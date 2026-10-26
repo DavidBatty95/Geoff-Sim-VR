@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="210" viewBox="0 0 1100 210" role="img" aria-label="Quest poses flow through TeleVuer and relative wrist IK into MuJoCo; stereo images return to the headset">
+<rect width="1100" height="210" rx="16" fill="#101c2c"/>
+<g font-family="sans-serif" text-anchor="middle">
+<g fill="#203a50" stroke="#3d647c"><rect x="30" y="35" width="210" height="90" rx="12"/><rect x="305" y="35" width="210" height="90" rx="12"/><rect x="580" y="35" width="210" height="90" rx="12"/><rect x="855" y="35" width="210" height="90" rx="12"/></g>
+<g fill="#eff7ff" font-size="22"><text x="135" y="72">Meta Quest</text><text x="410" y="72">TeleVuer</text><text x="685" y="72">Relative wrist IK</text><text x="960" y="72">MuJoCo</text></g>
+<g fill="#b7d1df" font-size="15"><text x="135" y="102">Grip or pinch to move</text><text x="410" y="102">TLS + WebSocket</text><text x="685" y="102">Two independent clutches</text><text x="960" y="102">14 actuated joints</text></g>
+<g fill="#36dcf2" font-size="32"><text x="272" y="88">→</text><text x="547" y="88">→</text><text x="822" y="88">→</text></g>
+<path d="M960 137V173H135V137" stroke="#ffab68" stroke-width="2" fill="none"/>
+<text x="550" y="164" font-size="16" fill="#ffbf8c">Stereo render + FOLLOW / HOLD overlay</text>
+</g></svg>

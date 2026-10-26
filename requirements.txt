@@ -1,0 +1,6 @@
+mujoco==3.3.6
+numpy==1.26.4
+opencv-python-headless==4.11.0.86
+vuer[all]==0.0.60
+params-proto==2.13.2
+pytest==8.4.2

@@ -1,0 +1,23 @@
+{
+  "Dockerfile": "5cf222d6353e24409842ee2f44b03e2aad39c5bc3b891eda6f11cdbef290b21d",
+  "assets/g1/original.xml": "c7bec8183aebdc23be735bdc6705a0adc4b0fba230ecbd46a42f0fe4a7269951",
+  "compose.gpu.yaml": "0024e1545974ebb8fde8ca8fa0ee1f3cf58065783e039e370a2b1ce4caaff312",
+  "compose.yaml": "0ca2fdffd98ffe486cfce15f73bb66e70b793704672da2e73ccd18e586d2d4a1",
+  "constraints.txt": "a7926e3973f43aa4b69d7cb6990fbda7f975ade0afce21a52b23822355659914",
+  "dougie_vr/__init__.py": "8a0a733a490ce024534199648de862f0f7ceef914ecae98554c41d25dd5e5a84",
+  "dougie_vr/app.py": "e7de296e4b788a4c7efed937ef13a88494af64f5c9548ec8fd89ad83ae3d1a29",
+  "dougie_vr/certificates.py": "fa4e02e70e58343412adab2d2a22ac3eccaf1fcf9b2096554e9456e0d71fe624",
+  "dougie_vr/control.py": "dba6dd1d7a9f5c0ed5ae081a4bad84799164a595e508902fadbf1cc0560bd9e2",
+  "dougie_vr/demo.py": "1c13627036a4d64a7cbb9d54f49e60fb0af1727ab9ce4db5511b675cf361f9de",
+  "dougie_vr/model.py": "e3fc737e95925e2a5b308476a9ce6e85b0d85ba6afb959f15dc5b213ab04bde3",
+  "dougie_vr/probe.py": "b43b0cffbcd4d04c40151bb08c22a87eb22d5869c5e042c88059794b2d2c1262",
+  "dougie_vr/rendering.py": "1c43569bf8ec51d6cb046cebb7f04a50c4756a9e9e243b406d6fe2de8f18e428",
+  "dougie_vr/simulation.py": "eaaf4f8d89aa4fcf271d2fe70ea1c1783fdfd2202746e7a3030ad6c21b916a14",
+  "requirements.txt": "2fee80c68e39c107760bf23978dc0f5deedf5ca3e80bb283b6eb0ce014c54910",
+  "tests/test_hand_events.py": "9945e1ad83fd835cba181679da370af090109854dd3976820fafb21c47c4ea48",
+  "tests/test_pipeline.py": "ce64be5bd5ce982710451c2c1d2f8e677a0492fce32a4e20f42081188a2c61af",
+  "vendor/source-manifest.json": "d13a8b21fd478b477b03afee895b89b6fb3098cae75e2872cf86860c59b3e485",
+  "vendor/televuer/televuer/__init__.py": "c585573a5ee461083a4f485780be7b8b5543a7a30ba6736997a29120efa39c25",
+  "vendor/televuer/televuer/televuer.py": "a5d7c12c9cd89dd1c6ec3e5ca554077ecab7b19b95381059ceba53f56df8aa46",
+  "vendor/televuer/televuer/tv_wrapper.py": "5a962fdd271745e68c940dd257fcfd99fc60c22c55d00092097d6a0b77d82e6b"
+}

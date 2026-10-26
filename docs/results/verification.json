@@ -1,0 +1,12 @@
+{
+  "source": "synthetic wrist poses; not a physical Quest session",
+  "physics_seconds": 7.999999999999341,
+  "frames": 40,
+  "max_wrist_motion_m": {
+    "left": 0.1426736972556366,
+    "right": 0.14267369725563747
+  },
+  "tracking_error_mean_m": 0.03422321466519057,
+  "tracking_error_max_m": 0.06706842934850889,
+  "finite_state": true
+}

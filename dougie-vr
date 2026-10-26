@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(dirname "$(readlink -f "$0")")"
+export COMPOSE_PROJECT_NAME=dougie-vr
+compose() { docker compose --project-directory "$ROOT" -f "$ROOT/compose.yaml" "$@"; }
+case "${1:-help}" in
+  build) compose build ;;
+  certs) python3 "$ROOT/dougie_vr/certificates.py" "${2:?Usage: ./dougie-vr certs HOST_LAN_IP}" ;;
+  up) compose up -d ;;
+  up-gpu) compose -f "$ROOT/compose.gpu.yaml" up -d ;;
+  down) compose down ;;
+  logs) compose logs -f ;;
+  status) compose ps ;;
+  test) docker run --rm --entrypoint python dougie-vr:local -m pytest -q ;;
+  demo) mkdir -p "$ROOT/results"; docker run --rm --user "$(id -u):$(id -g)" -v "$ROOT/results:/results" --entrypoint python dougie-vr:local -m dougie_vr.demo --output /results ;;
+  probe) compose exec -T vr python -m dougie_vr.probe ;;
+  *) printf '%s\n' 'Dougie-VR: build | certs HOST_LAN_IP | up | up-gpu | down | logs | status | test | demo | probe' ;;
+esac
