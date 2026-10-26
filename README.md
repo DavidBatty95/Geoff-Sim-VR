@@ -1,11 +1,11 @@
 <div align="center">
-  <img src="docs/media/banner.svg" width="100%" alt="Dougie-VR — your reach, in simulation">
+  <img src="docs/media/banner.svg" width="100%" alt="Geoff-Sim-VR — your reach, in simulation">
   <p><strong>Meta Quest · Unitree G1 · MuJoCo · Stereo HUD · Docker</strong></p>
-  <a href="https://github.com/DavidBatty95/Dougie-VR/actions/workflows/verification.yml"><img src="https://github.com/DavidBatty95/Dougie-VR/actions/workflows/verification.yml/badge.svg" alt="Container verification"></a>
+  <a href="https://github.com/DavidBatty95/Geoff-Sim-VR/actions/workflows/verification.yml"><img src="https://github.com/DavidBatty95/Geoff-Sim-VR/actions/workflows/verification.yml/badge.svg" alt="Container verification"></a>
   <p><a href="#quick-start">Quick start</a> · <a href="docs/QUEST_SETUP.md">Headset setup</a> · <a href="#recorded-simulation-demo">Demo</a> · <a href="docs/INDEX.md">Docs</a> · <a href="docs/ARCHITECTURE.md">Architecture</a> · <a href="docs/VALIDATION.md">Results</a> · <a href="docs/PROJECT_STATUS.md">Progress</a></p>
 </div>
 
-**Put the robot's workspace in your headset.** Dougie-VR connects a Meta Quest's
+**Put the robot's workspace in your headset.** Geoff-Sim-VR connects a Meta Quest's
 tracked controllers or hands to a pair of seven-joint G1 arms in MuJoCo. Hold a
 controller grip—or pinch your fingers—to move an arm. Release to hold position.
 The headset receives a stereo view of the simulated workspace with a live
@@ -13,10 +13,14 @@ The headset receives a stereo view of the simulated workspace with a live
 
 It brings the modified TeleVuer display/tracking package from `geoff_remote_ws`
 together with the G1 assets from [GeoffMain](https://github.com/DavidBatty95/GeoffMain),
-using a new native MuJoCo control backend. It follows the documentation style of
-[Geoff-Sim](https://github.com/DavidBatty95/Geoff-Sim).
-Despite the project name, the included robot is the **G1 humanoid**, as in those
-source packages—not the Go2 quadruped from Dougie-Sim.
+using a native MuJoCo control backend. It is the immersive arm-teleoperation
+companion to [Geoff-Sim](https://github.com/DavidBatty95/Geoff-Sim), using the
+**Unitree G1 humanoid**. [Dougie-Sim](https://github.com/DavidBatty95/Dougie-Sim)
+is the separate Go2 quadruped exploration project.
+
+Previously named **Dougie-VR**, this repository is now **Geoff-Sim-VR**. The
+launcher is still named `dougie-vr` and the Python package is `dougie_vr`; use the
+commands below with the new repository URL.
 
 **Current status · 26 October 2026:** Docker build, real physics, offscreen stereo
 rendering, and all four live XR protocol profiles pass automated checks.
@@ -43,7 +47,7 @@ motion followed by two seconds of hold. These are **actual MuJoCo-rendered frame
 driven by synthetic poses**, not a recording from a Quest or a physical robot.
 The GIF shows the left-eye view; live operation streams separate left/right images.
 
-## Explore Dougie-VR
+## Explore Geoff-Sim-VR
 
 | Capability | What you can do |
 | --- | --- |
@@ -65,8 +69,8 @@ The CPU/OSMesa fallback needs no display server, GPU passthrough, ROS or Conda.
 Allow roughly 3 GB for the image/build cache and source checkout.
 
 ```bash
-git clone git@github.com:DavidBatty95/Dougie-VR.git
-cd Dougie-VR
+git clone git@github.com:DavidBatty95/Geoff-Sim-VR.git
+cd Geoff-Sim-VR
 ./dougie-vr build
 ./dougie-vr test
 
@@ -149,7 +153,7 @@ and [progress](docs/PROJECT_STATUS.md) for the integration boundary.
 ## Repository map
 
 ```text
-Dougie-VR/
+Geoff-Sim-VR/
 ├── dougie-vr                 Daily build/run/test launcher
 ├── Dockerfile                Headless Python + MuJoCo + TeleVuer runtime
 ├── compose*.yaml             CPU baseline and NVIDIA/EGL override
@@ -179,5 +183,5 @@ Dougie-VR/
 - **MuJoCo:** native rigid-body simulation, kinematics and rendering.
 - **GeoffMain / geoff_remote_ws:** the source workspace and modified headset display package.
 
-Original Dougie-VR code is MIT licensed. Vendored components retain their own
+Original project code is MIT licensed. Vendored components retain their own
 licenses: [TeleVuer](vendor/televuer/LICENSE), [G1 assets](assets/g1/LICENSE).

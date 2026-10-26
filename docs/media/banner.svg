@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
-  <title id="title">Dougie-VR — your reach, in simulation</title>
+  <title id="title">Geoff-Sim-VR — your reach, in simulation</title>
   <desc id="desc">Meta Quest tracking, two G1 robot arms, and a stereo MuJoCo heads-up display.</desc>
   <defs><linearGradient id="bg"><stop stop-color="#081323"/><stop offset="1" stop-color="#183b50"/></linearGradient></defs>
   <rect width="1200" height="320" rx="22" fill="url(#bg)"/>
   <path d="M0 260H1200M0 280H1200M0 300H1200M720 170L650 320M800 170L800 320M880 170L950 320M960 170L1100 320" stroke="#2c5265" opacity=".6"/>
   <text x="52" y="65" font-family="sans-serif" font-size="15" letter-spacing="5" fill="#69d9ea">HUMAN INPUT · ROBOT MOTION</text>
-  <text x="48" y="142" font-family="sans-serif" font-size="70" font-weight="bold" fill="#f1f7fa">Dougie-VR</text>
+  <text x="48" y="142" font-family="sans-serif" font-size="70" font-weight="bold" fill="#f1f7fa">Geoff-Sim-VR</text>
   <text x="52" y="187" font-family="sans-serif" font-size="25" fill="#b3cbd8">Your reach. Two arms. One virtual workspace.</text>
   <rect x="52" y="229" width="524" height="40" rx="20" fill="#203f54"/>
   <text x="74" y="255" font-family="sans-serif" font-size="17" fill="#e0f4ff">META QUEST   /   MUJOCO   /   G1   /   DOCKER</text>
